@@ -2,15 +2,15 @@
 public class TesteProduto {
     public static void main(String[] args) {
 
-        Produto produto1 = new Produto("Livro", 30.99, 100);
-        Produto produto2 = new Produto("Notebook", 4999.99, 5);
+        Produto produto1 = new Produto("Computador", 5999.99, 50);
+        Produto produto2 = new Produto("Televisão", 3999.99, 20);
 
         System.out.println("Detalhes dos produtos antes de ser realizada as operações:");
         imprimirDetalhesProduto(produto1);
         imprimirDetalhesProduto(produto2);
 
-        produto1.adicionarEstoque(5);
-        produto2.removerEstoque(2);
+        produto1.adicionarEstoque(10);
+        produto2.removerEstoque(7);
 
         System.out.println("\nDetalhes dos produtos depois de ser realizada as operações:");
         imprimirDetalhesProduto(produto1);
